@@ -14,7 +14,7 @@ const ManagerQues =[
     },
     {
         type: "input",
-        name: "ID",
+        name: "id",
         message: "Please provide the Employee's ID number",
     },
     {
@@ -37,7 +37,7 @@ const EngineerQues =[
     },
     {
         type: "input",
-        name: "ID",
+        name: "id",
         message: "Please provide the Employee's ID number",
     },
     {
@@ -47,7 +47,7 @@ const EngineerQues =[
     },
     {
         type: "input",
-        name: "GitHub",
+        name: "github",
         message: "Please provide the Eningeer's GitHub username",
     },
 ];
@@ -60,7 +60,7 @@ const InternQues =[
     },
     {
         type: "input",
-        name: "ID",
+        name: "id",
         message: "Please provide the Employee's ID number",
     },
     {
@@ -75,3 +75,4 @@ const InternQues =[
     },
 ];
 
+module.exports = (StartQuestion, InternQues, EngineerQues, ManagerQues);
