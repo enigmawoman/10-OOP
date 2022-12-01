@@ -48,7 +48,7 @@ const EngineerQues =[
     {
         type: "input",
         name: "github",
-        message: "Please provide the Eningeer's GitHub username",
+        message: "Please provide the Engineer's GitHub username",
     },
 ];
 
@@ -75,4 +75,4 @@ const InternQues =[
     },
 ];
 
-module.exports = (StartQuestion, InternQues, EngineerQues, ManagerQues);
+module.exports = {StartQuestion, InternQues, EngineerQues, ManagerQues};
