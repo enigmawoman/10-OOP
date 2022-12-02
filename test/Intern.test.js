@@ -17,11 +17,11 @@ describe("Intern", () => {
         expect(result.email).toEqual(email);
         expect(result.school).toEqual(school)
   
-        expect(result.employeeName()).toEqual(name);
-        expect(result.employeeID()).toEqual(id);
-        expect(result.employeeEmail()).toEqual(email);
-        expect(result.internSchool()).toEqual(school);
-        expect(result.employeeRole()).toEqual(role);
+        expect(result.getName()).toEqual(name);
+        expect(result.getID()).toEqual(id);
+        expect(result.getEmail()).toEqual(email);
+        expect(result.getSchool()).toEqual(school);
+        expect(result.getRole()).toEqual(role);
   
         });
     });

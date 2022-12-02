@@ -1,0 +1,22 @@
+/* general colours for the site */
+:root {
+    --dark: rgb(114, 158, 38);
+    --light: white;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  /* overall universal styling for the page */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* styling for the body element of the page */
+  body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background: var(--light);
+  }

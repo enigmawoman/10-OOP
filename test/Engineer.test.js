@@ -17,11 +17,11 @@ describe("Engineer", () => {
       expect(result.email).toEqual(email);
       expect(result.github).toEqual(github)
 
-      expect(result.employeeName()).toEqual(name);
-      expect(result.employeeID()).toEqual(id);
-      expect(result.employeeEmail()).toEqual(email);
-      expect(result.engineerGithub()).toEqual(github);
-      expect(result.employeeRole()).toEqual(role);
+      expect(result.getName()).toEqual(name);
+      expect(result.getID()).toEqual(id);
+      expect(result.getEmail()).toEqual(email);
+      expect(result.getGithub()).toEqual(github);
+      expect(result.getRole()).toEqual(role);
 
     });
   });
