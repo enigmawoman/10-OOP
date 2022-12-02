@@ -8,7 +8,7 @@ describe("Intern", () => {
         const id = 101;
         const email = 'jacob@employee.com';
         const school = 'Interns R US'
-        const role = 'Engineer';
+        const role = 'Intern';
 
         const result = new Intern(name, id, email, school);
 

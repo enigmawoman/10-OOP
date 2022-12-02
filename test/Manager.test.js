@@ -8,9 +8,9 @@ describe("Manager", () => {
         const id = 101;
         const email = 'jacob@employee.com';
         const officeNumber = '02045876342';
-        const role = 'Engineer';
+        const role = 'Manager';
 
-        const result = new Intern(name, id, email, officeNumber);
+        const result = new Manager(name, id, email, officeNumber);
 
         expect(result.name).toEqual(name);
         expect(result.id).toEqual(id);
