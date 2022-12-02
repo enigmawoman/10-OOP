@@ -15,10 +15,10 @@ describe("Employee", () => {
       expect(result.id).toEqual(id);
       expect(result.email).toEqual(email);
 
-      expect(result.employeeName()).toEqual(name);
-      expect(result.employeeID()).toEqual(id);
-      expect(result.employeeEmail()).toEqual(email);
-      expect(result.employeeRole()).toEqual(role);
+      expect(result.getName()).toEqual(name);
+      expect(result.getID()).toEqual(id);
+      expect(result.getEmail()).toEqual(email);
+      expect(result.getRole()).toEqual(role);
 
     });
   });
