@@ -1,7 +1,10 @@
 /* general colours for the site */
 :root {
-    --dark: rgb(114, 158, 38);
-    --light: white;
+    --dark: rgb(0,0,0);
+    --mid2: rgb(194, 209, 204);
+    --mid3: rgb(126, 126, 126);
+    --mid: rgb(34, 212, 165);
+    --white: rgb(255, 255, 255);
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -14,9 +17,88 @@
   }
   /* styling for the body element of the page */
   body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: black;
   background: var(--light);
+  min-height: 100vh;
   }
+
+  header {
+    background-color: var(--mid);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #employee-page {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .box {
+    background-color: var(--mid2);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--dark);
+  }
+
+  .box-header {
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+
+  .box-header h3{
+    color: var(--mid3)
+   }
+
+  .box-info {
+    padding: 15px;
+    margin-top: 5px;
+  }
+
+  .footer {
+    margin-top: auto;
+    background: var(--dark);
+    color: #fff;
+    height: 50px;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+@media(max-width: 810px) {
+  #employee-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 10px;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  #employee-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+  }
+}

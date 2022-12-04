@@ -11,47 +11,50 @@ const htmlGenerator = (Managers, Engineers, Interns) => {
 
         let managerInfo = '';
         Managers.forEach(manager => {
-            managerInfo += `<div class="box">
-            <div class="box-header">
-                <h2><span class="fa-solid fa-user-tie"></span>Engineer</h2>
-            </div>
-            <div class="box-info">
-                <h3>${manager.name}</h3>
-                <p>Employee ID: ${manager.id} </p>
-                <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p>Office Number: ${manager.officeNumber}</p>
-            </div>
-        </div>`
+            managerInfo += 
+            `<div class="box">
+                <div class="box-header">
+                    <h2>${manager.name}</h2>
+                    <h3><span class="fa-solid fa-user-tie"></span> Manager</h3>
+                </div>
+                <div class="box-info">
+                    <p><b><i>Employee ID:</i></b> ${manager.id} </p>
+                    <p><b><i>Email:</i></b> <a href="mailto:${manager.email}">${manager.email}</a></p>
+                    <p><b><i>Office Number:</i></b> ${manager.officeNumber}</p>
+                </div>
+             </div>`
         })
 
         let engineerInfo = '';
         Engineers.forEach(engineer => {
-            engineerInfo += `<div class="box">
-            <div class="box-header">
-                <h2><span class="fa-solid fa-user-gear"></span> Manager</h2>
-            </div>
-            <div class="box-info">
-                <h3>${engineer.name}</h3>
-                <p>Employee ID: ${engineer.id} </p>
-                <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p>GitHub: <a href="https://github.com/${engineer.github}">@${engineer.github}</a></p>
-            </div>
-        </div>`
+            engineerInfo += 
+            `<div class="box">
+                <div class="box-header">
+                    <h2>${engineer.name}</h2>
+                    <h3><span class="fa-solid fa-user-gear"></span> Engineer</h3>
+                </div>
+                <div class="box-info">
+                    <p><b><i>Employee ID:</i></b> ${engineer.id} </p>
+                    <p><b><i>Email:</i></b> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                    <p><b><i>GitHub:</i></b> <a href="https://github.com/${engineer.github}">@${engineer.github}</a></p>
+                </div>
+            </div>`
         })
 
         let internInfo = '';
         Interns.forEach(intern => {
-            internInfo += `<div class="box">
-            <div class="box-header">
-                <h2><span class="fa-solid fa-graduation-cap"></span> Intern</h2>
-            </div>
-            <div class="box-info">
-                <h3>${intern.name}</h3>
-                <p>Employee ID: ${intern.id} </p>
-                <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-                <p>School: ${intern.school}</p>
-            </div>
-        </div>`
+            internInfo += 
+            `<div class="box">
+                <div class="box-header">
+                    <h2>${intern.name}</h2>
+                    <h3><span class="fa-solid fa-graduation-cap"></span> Intern</h3>
+                </div>
+                <div class="box-info">
+                    <p><b><i>Employee ID:</i></b> ${intern.id} </p>
+                    <p><b><i>Email:</i></b> <a href="mailto:${intern.email}">${intern.email}</a></p>
+                    <p><b><i>School:</i></b> ${intern.school}</p>
+                </div>
+            </div>`
         })
 
         pagePopulate = pagePopulate.replace('<!--managerInfo-->', managerInfo);
