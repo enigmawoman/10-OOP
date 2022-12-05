@@ -100,6 +100,8 @@ I have fully commented the JavaScript files, to explain the flow and logic of th
 Shortened version embedded below:
 
 
+https://user-images.githubusercontent.com/112570078/205699422-9de47e9c-e5fb-4a9f-8b3d-bffff4329eda.mp4
+
 
 
 ### Screenshot of the Team Profile Generator
@@ -114,4 +116,3 @@ NA
 ## Questions
 
 If you have any questions, reach out at [@enigmawoman](https://github.com/enigmawoman)</br>
-Alternatively, send your questions to readme@generator.com
