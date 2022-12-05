@@ -77,7 +77,7 @@ npm run test
 ```
 The tests should all return as passed:
 
-![Screenshot of code tests](./assets/Screenshot%202022-12-05%20at%2010.57.44.png)
+![Screenshot of code tests](./assets/Screenshot%202022-12-05%20at%2017.12.50.png)
 
 ## Using the code
 
@@ -101,7 +101,6 @@ Shortened version embedded below:
 
 
 https://user-images.githubusercontent.com/112570078/205699422-9de47e9c-e5fb-4a9f-8b3d-bffff4329eda.mp4
-
 
 
 ### Screenshot of the Team Profile Generator

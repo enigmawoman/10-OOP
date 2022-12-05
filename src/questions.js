@@ -1,3 +1,4 @@
+// the questions that will be presented to the user when the functions run
 const StartQuestion =[
     {   type: 'list',
         message: 'What would you like to do?',
@@ -74,5 +75,5 @@ const InternQues =[
         message: "Please provide the Intern's School name",
     },
 ];
-
+// exporting the questions
 module.exports = {StartQuestion, InternQues, EngineerQues, ManagerQues};
