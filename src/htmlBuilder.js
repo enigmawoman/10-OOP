@@ -1,12 +1,14 @@
+// we require the node.js file system module
 const fs = require('fs');
-
+// we require the information in the following files in order to run the code on this page
 const Manager = require('../lib/Manager');
 const Intern = require('../lib/Intern');
 const Engineer = require('../lib/Engineer');
-
+// this function will run when the user runs the "build team page" request - it will bring over the information from the arrays generated in the runQuestions.js file and write the information into the template literals
 const htmlGenerator = (Managers, Engineers, Interns) => {
-
+// this reads and syncs the information in the starter.html with the information being added through the template literals below
     let pagePopulate = fs.readFileSync('./templates/starter.html', 'utf8');
+    // a "for loop" to populate the information for each type of employee
     if (pagePopulate) {
 
         let managerInfo = '';
@@ -56,19 +58,19 @@ const htmlGenerator = (Managers, Engineers, Interns) => {
                 </div>
             </div>`
         })
-
+        // swapping out the "hold text" and replacing with the template literals above
         pagePopulate = pagePopulate.replace('<!--managerInfo-->', managerInfo);
         pagePopulate = pagePopulate.replace('<!--engineerInfo-->', engineerInfo);
         pagePopulate = pagePopulate.replace('<!--internInfo-->', internInfo);
-
+// using the node.js file system to write the info from the page populate function to a new file for the user to render in a browser
         fs.writeFileSync('./dist/teamPage.html', pagePopulate, 'utf8');
-
+// confirming the page has been sucessfully created
         console.log('Team page created')
 
     }
 } 
 
-
+// exporting the function needed to link from the runQuestions.js file
 module.exports = htmlGenerator
 
 

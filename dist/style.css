@@ -79,7 +79,7 @@
     height: 100%;
   }
 
-
+/*media queries for a responsive site*/
 @media(max-width: 810px) {
   #employee-page {
     display: flex;
